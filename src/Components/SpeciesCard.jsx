@@ -127,13 +127,14 @@ function WildlifePage() {
         </div>
 
         {menuOpen && (
-          <div className="md:hidden bg-[#17a24a] px-6 pb-4 space-y-3">
-            <a href="#" className="block font-bold text-white">Wildlife</a>
-            <a href="#" className="block hover:text-white">Join Team</a>
-            <a href="#" className="block hover:text-white">Program</a>
-            <a href="#" className="block hover:text-white">Contact</a>
-            <a href="#" className="block hover:text-white">Blog</a>
-          </div>
+              <div className="md:hidden bg-[#17a24a] px-6 pb-4 space-y-3">
+              <a href="/" className="block hover:text-white">Home</a>
+              <a href="wildLife" className="block hover:text-white">Wildlife</a>
+              <a href="join" className="block hover:text-white">Join team</a>
+              <a href="program" className="block hover:text-white">Program</a>
+              <a href="contact" className="block hover:text-white">Contact</a>
+              <a href="blog" className="block hover:text-white">Blog</a>
+            </div>
         )}
       </header>
 
