@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .primary-btn {
+    @apply inline-block bg-primary text-white font-semibold rounded-lg hover:bg-secondary duration-200 shadow-[0px_10px_8px_-7px_#ffd978] hover:shadow-[0px_10px_8px_-7px_#69a79c] py-2 px-6;
+  }
+}
+
+@layer utilities {
+  .drop-shadow {
+    filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.5));
+  }
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Apply animation to the scrolling container */
+.services-wrapper {
+  animation: scroll-left 10s linear infinite;
+  display: flex;
+  width: fit-content;
+}
+
+/* Ensures the wrapper stays within its container */
+.overflow-hidden {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
